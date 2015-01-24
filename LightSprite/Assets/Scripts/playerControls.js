@@ -30,3 +30,11 @@ function Update () {
 
 }
 
+function OnCollisionEnter(collision : Collision)
+{
+	var whohitme = collision.gameObject;
+	if( whohitme.name == "lantern") {
+		Destroy(whohitme);
+	}
+}
+
