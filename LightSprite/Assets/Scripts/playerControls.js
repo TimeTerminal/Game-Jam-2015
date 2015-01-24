@@ -23,8 +23,10 @@ function Update () {
 		rigidbody2D.velocity.y = speed * -1;
 	}
 	else {
+
 		rigidbody2D.velocity.x = 0;
 		rigidbody2D.velocity.y = 0;
 	}
 
 }
+
