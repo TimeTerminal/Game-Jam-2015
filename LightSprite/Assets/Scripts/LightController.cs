@@ -5,8 +5,6 @@ public class LightController : MonoBehaviour {
 
 	GameObject playerLight;
 
-	//public int startSize;
-
 	//public float currentSpeed = 0.0f;
 
 	//public float lightAcc = 0.2f;
@@ -17,10 +15,6 @@ public class LightController : MonoBehaviour {
 
 		playerLight = GameObject.Find ("Player Light");
 		playerLight.gameObject.GetComponent<Light>();
-		/*
-		baseScale = playerLight.transform.localScale;
-		//currentScale = baseScale * startSize;
-		targetScale = baseScale * startSize;*/
 	}
 	
 	// Update is called once per frame
@@ -31,6 +25,7 @@ public class LightController : MonoBehaviour {
 			playerLight.light.spotAngle += 3;
 		}
 
+		//Accelerate the shinking light over time
 		//currentSpeed = currentSpeed + (lightAcc * Time.deltaTime);
 
 		float scale = Time.deltaTime * 2;
