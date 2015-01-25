@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\HaloBudge.cs" />
+     <Compile Include="Assets\Scripts\LanternHit.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\SpawnLevel.cs" />
      <Compile Include="Assets\Scripts\sortParticleSystem.cs" />
