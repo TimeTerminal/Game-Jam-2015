@@ -22,14 +22,15 @@ public class LightController : MonoBehaviour {
 
 		if (Input.GetButtonDown ("TurnOnLight")) {
 			Debug.Log("Light is on!");
-			playerLight.light.spotAngle += 3;
+			playerLight.light.spotAngle += 10;
 		}
 
 		//Accelerate the shinking light over time
 		//currentSpeed = currentSpeed + (lightAcc * Time.deltaTime);
 
-		float scale = Time.deltaTime * 2;
+		float scale = Time.deltaTime * 6;
 
 		playerLight.light.spotAngle -= scale;
+		Debug.Log(scale);
 	}
 }

@@ -30,11 +30,12 @@ function Update () {
 
 }
 
-function OnCollisionEnter(collision : Collision)
+function OnCollisionEnter2D(collision : Collision2D)
 {
-	var whohitme = collision.gameObject;
+	/*var whohitme = collision.gameObject;
 	if( whohitme.name == "lantern") {
+		Debug.Log("Lanturn hit");
 		Destroy(whohitme);
-	}
+	}*/
 }
 
