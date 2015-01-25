@@ -4,11 +4,7 @@ using System.Collections;
 public class LightController : MonoBehaviour {
 	public GameObject player1Light;
 	public GameObject player2Light;
-	//public float currentSpeed = 0.0f;
-	
-	//public float lightAcc = 0.2f;
-	
-	
+	//public AudioClip die;
 	// Use this for initialization
 	void Start () {
 		
@@ -24,11 +20,13 @@ public class LightController : MonoBehaviour {
 			player1Light.light.spotAngle += 3;
 		}*/
 		if(player1Light.light.spotAngle == 1){
-			Application.LoadLevel("gameOver Player 1");
+			Application.LoadLevel("gameOver");
+			//audio.PlayOneShot(die);
 		}
 
 		if(player2Light.light.spotAngle == 1){
-			Application.LoadLevel("gameOver Player 2");
+			Application.LoadLevel("gameOver");
+			//audio.PlayOneShot(die);
 		}
 		//Accelerate the shinking light over time
 		//currentSpeed = currentSpeed + (lightAcc * Time.deltaTime);

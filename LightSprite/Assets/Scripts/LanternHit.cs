@@ -4,7 +4,7 @@ using System.Collections;
 public class LanternHit : MonoBehaviour {
 	GameObject player1Light;
 	GameObject player2Light;
-	
+	public AudioClip pickup;
 
 	
 	public Font scoreFont;
@@ -36,13 +36,13 @@ public class LanternHit : MonoBehaviour {
 		if (isHit.tag == "Player1") {
 			player1Light.light.spotAngle += 10;
 			this.transform.position = new Vector3 (Random.Range (0, 18), Random.Range (0, 13), 0);
-
+			audio.PlayOneShot(pickup);
+			
 		}
 		if (isHit.tag == "Player2") {
 			player2Light.light.spotAngle += 10;
 			this.transform.position = new Vector3 (Random.Range (0, 18), Random.Range (0, 13), 0);
-
-		}
+			audio.PlayOneShot(pickup);		}
 
 		if(isHit.name == "Obstacle"){
 			this.transform.position = new Vector3(Random.Range (0, 18), Random.Range (0, 13), 0);
