@@ -22,7 +22,7 @@ public class LanternHit : MonoBehaviour {
 	
 	void OnGUI() {
 		GUI.skin.font = scoreFont;
-		GUI.Label (textArea, "Score: " + score);
+		GUI.Label (textArea, "Score " + score);
 		
 	}
 	
@@ -33,6 +33,10 @@ public class LanternHit : MonoBehaviour {
 			this.transform.position = new Vector3 (Random.Range (0, 18), Random.Range (0, 13), 0);
 			score++;
 		}
-	}
+		if(isHit.name == "Obstacle"){
+			this.transform.position = new Vector3(Random.Range (0, 18), Random.Range (0, 13), 0);
+			
+		}
 
+	}
 }
