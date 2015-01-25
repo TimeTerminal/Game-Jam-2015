@@ -32,5 +32,9 @@ public class LightController : MonoBehaviour {
 
 		playerLight.light.spotAngle -= scale;
 		Debug.Log(scale);
+
+		if (playerLight.light.spotAngle == 1) {
+			Application.LoadLevel ("gameOver");
+		}
 	}
 }

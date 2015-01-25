@@ -6,7 +6,12 @@ public class LanternHit : MonoBehaviour {
 
 
 	GameObject playerLight;
-	
+
+	int score;
+
+	public Font scoreFont;
+	Rect textArea = new Rect (Screen.width/2,10,Screen.width,Screen.height);
+
 	//public float currentSpeed = 0.0f;
 	
 	//public float lightAcc = 0.2f;
@@ -14,7 +19,7 @@ public class LanternHit : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		
+		score = 0;
 		playerLight = GameObject.Find ("Player Light");
 		playerLight.gameObject.GetComponent<Light>();
 	}
@@ -35,6 +40,11 @@ public class LanternHit : MonoBehaviour {
 		playerLight.light.spotAngle -= scale;*/
 	}
 
+	void OnGUI() {
+		GUI.skin.font = scoreFont;
+		GUI.Label (textArea, "Score: " + score);
+
+		}
 
 	void OnCollisionEnter2D(Collision2D collision){
 		GameObject isHit = collision.gameObject;
@@ -42,6 +52,7 @@ public class LanternHit : MonoBehaviour {
 			Debug.Log ("U hit a lanturn, have more light!");
 			playerLight.light.spotAngle += 10;
 			this.transform.position = new Vector3 (Random.Range (0, 18), Random.Range (0, 13), 0);
+			score++;
 		}
 	}
 
