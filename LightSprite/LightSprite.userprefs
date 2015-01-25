@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LightController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LanternHit.cs">
     <Files>
-      <File FileName="Assets\Scripts\LightController.cs" Line="19" Column="18" />
+      <File FileName="Assets\Scripts\LightController.cs" Line="23" Column="23" />
       <File FileName="Assets\Scripts\SpawnLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\playerControls.js" Line="96" Column="3" />
+      <File FileName="Assets\Scripts\playerControls.js" Line="106" Column="1" />
+      <File FileName="Assets\Scripts\LanternHit.cs" Line="7" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
