@@ -4,11 +4,15 @@ using System.Collections;
 public class SpawnLevel : MonoBehaviour {
 
 	public GameObject obsPrefab;
+	public GameObject LanternPrefab;
 
 	GameObject newObs;
+	GameObject newLntrn;
 		
 	int gridWidth = 12;
 	int gridHeight = 6;
+
+	bool LanternGrabbed = true;
 
 	public float PercentSpawn;
 	
@@ -33,7 +37,16 @@ public class SpawnLevel : MonoBehaviour {
 		}
 	}
 
-	
+	void Update(){
+		if (LanternGrabbed == true) {
+
+			newLntrn = Instantiate (LanternPrefab, new Vector3 (Random.Range (0, 18), Random.Range (0, 17), 0), Quaternion.identity) as GameObject;
+			LanternGrabbed = false;
+		} else {
+			//Do nothing	
+		}
+	}
+
 	bool randomBoolean ()
 	{
 		if (Random.value <= PercentSpawn){
