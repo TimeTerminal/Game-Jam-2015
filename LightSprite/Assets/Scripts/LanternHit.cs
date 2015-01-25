@@ -38,7 +38,6 @@ public class LanternHit : MonoBehaviour {
 			this.transform.position = new Vector3 (Random.Range (0, 18), Random.Range (0, 13), 0);
 
 		}
-
 		if (isHit.tag == "Player2") {
 			player2Light.light.spotAngle += 10;
 			this.transform.position = new Vector3 (Random.Range (0, 18), Random.Range (0, 13), 0);
