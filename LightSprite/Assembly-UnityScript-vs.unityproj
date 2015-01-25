@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\playerControls.js" />
+     <Compile Include="Assets\openGame.js" />
      <Compile Include="Assets\wallInteraction.js" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/travisswan/Documents/GitRepo/Game-Jam-2015/LightSprite/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>

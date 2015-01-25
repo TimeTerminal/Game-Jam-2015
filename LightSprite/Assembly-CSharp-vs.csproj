@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Game.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/travisswan/Documents/GitRepo/Game-Jam-2015/LightSprite/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
