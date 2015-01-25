@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\playerControls.js" />
+     <Compile Include="Assets\openGame.js" />
+     <Compile Include="Assets\wallInteraction.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

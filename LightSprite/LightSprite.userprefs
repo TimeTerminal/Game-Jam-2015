@@ -1,9 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HaloBudge.cs">
     <Files>
       <File FileName="Assets\Scripts\HaloBudge.cs" Line="8" Column="1" />
       <File FileName="Assets\Scripts\sortParticleSystem.cs" Line="9" Column="56" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Game.cs" Line="5" Column="1" />
+>>>>>>> origin/Player
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
