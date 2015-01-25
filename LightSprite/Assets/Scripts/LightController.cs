@@ -27,7 +27,7 @@ public class LightController : MonoBehaviour {
 		//Accelerate the shinking light over time
 		//currentSpeed = currentSpeed + (lightAcc * Time.deltaTime);
 		
-		float scale = Time.deltaTime * 2;
+		float scale = Time.deltaTime * 3;
 		
 		playerLight.light.spotAngle -= scale;
 	}
