@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\SpawnLevel.cs" />
      <Compile Include="Assets\Scripts\sortParticleSystem.cs" />
+     <Compile Include="Assets\quit.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
