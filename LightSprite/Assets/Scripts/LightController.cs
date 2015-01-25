@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class LightController : MonoBehaviour {
-	public GameObject playerLight;
-	
+	public GameObject player1Light;
+	public GameObject player2Light;
 	//public float currentSpeed = 0.0f;
 	
 	//public float lightAcc = 0.2f;
@@ -19,16 +19,18 @@ public class LightController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetButtonDown ("TurnOnLight")) {
+		/*if (Input.GetButtonDown ("TurnOnLight")) {
 			Debug.Log("Light is on!");
-			playerLight.light.spotAngle += 3;
-		}
+			player1Light.light.spotAngle += 3;
+		}*/
 		
 		//Accelerate the shinking light over time
 		//currentSpeed = currentSpeed + (lightAcc * Time.deltaTime);
 		
 		float scale = Time.deltaTime * 3;
 		
-		playerLight.light.spotAngle -= scale;
+		player1Light.light.spotAngle -= scale;
+		player2Light.light.spotAngle -= scale;
+
 	}
 }
