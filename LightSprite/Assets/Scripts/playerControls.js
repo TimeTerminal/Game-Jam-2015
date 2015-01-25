@@ -9,14 +9,14 @@ var charLeft : Sprite;
 var charRight : Sprite;
 var charBottom : Sprite;
 var charUp : Sprite;
-
-
-var speed : float = 10;
+var speed : int;
 
 var player : Animator;
 
 function Start (){
 	player = GetComponent (Animator);
+	//speed = Time.deltaTime
+	speed = 2;
 }
 
 function Awake (){
@@ -40,7 +40,7 @@ function Update () {
 
 	//Left
 	if (Input.GetKey(moveLeft) == true) {
-		transform.position += Vector3.left * Time.deltaTime;
+		transform.position += Vector3.left * Time.deltaTime * speed;
 		TurnAllStatesFalse ();
 		player.SetBool ("PressLeft", true);
 		/*transform.rigidbody2D.velocity.x = speed * -1;
@@ -56,7 +56,7 @@ function Update () {
 		
 		TurnAllStatesFalse ();
 		player.SetBool ("PressRight", true);
-		transform.position += Vector3.right * Time.deltaTime;
+		transform.position += Vector3.right * Time.deltaTime * speed;
 		//transform.rigidbody2D.velocity.x = speed * 1;
 	}
 	else if (Input.GetKeyUp (moveRight)){
@@ -69,7 +69,7 @@ function Update () {
 	if (Input.GetKey (moveUp)) {
 		TurnAllStatesFalse ();
 		player.SetBool ("PressUp", true);
-		transform.position += Vector3.up * Time.deltaTime;
+		transform.position += Vector3.up * Time.deltaTime * speed;
 	}
 	else if (Input.GetKeyUp (moveUp)){
 		TurnAllStatesFalse ();
@@ -78,7 +78,7 @@ function Update () {
 	
 	//Down
 	if (Input.GetKey (moveDown)) {
-		transform.position += Vector3.down * Time.deltaTime;
+		transform.position += Vector3.down * Time.deltaTime * speed;
 		TurnAllStatesFalse ();
 		player.SetBool ("PressDown", true);
 	}
